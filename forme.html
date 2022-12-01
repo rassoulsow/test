@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <form action="">
+        <p>
+            <fieldset>
+                <legend>Qualité<abbr title="Ce champ est obligatoire">*</abbr></legend>
+                <input type="radio" required name="title" id="r1" value="Mr"><label for="">Mr</label>
+                <input type="radio" required name="title" id="r2" value="Mme"><label for="">Mme</label>
+            </fieldset>
+        </p>
+        <p>
+            <label for="n1">Quel est votre âge ?</label>
+            <input type="number" min="12" max="120" step="1" id="n1" name="age" pattern="\d+">
+        </p>
+        <p>
+            <label for="t1">Quel est votre équipe favorie&nbsp;?<abbr title="Ce champ est obligatoire"></abbr></label>
+            <input type="text" name="equipe" id="t1" list="l1" required pattern="[Sn]engal|[Ar]argentine|[Sp]pagne">
+            <datalist id="l1">
+                <option>Senegal</option>
+                <option>Argentine</option>
+                <option>Espagne</option>
+            </datalist>
+        </p>
+        <p>
+            <button>Soumettre</button>
+        </p>
+        <p>
+            <label for="t3">Laissez un court message</label>
+            <textarea name="msg" id="t3" cols="30" rows="10" maxlength="140" ></textarea>
+        </p>
+    </form>
+</body>
+</html>
